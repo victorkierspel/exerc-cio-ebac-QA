@@ -1,18 +1,19 @@
+    #language: pt
+
+    Cenário: Deve ser cadastrado com todos os dados obrigatórios, marcado com asteriscos
+    Quando eu preencho todos os campos obrigatórios marcados com asterisco
+    E informo um e-mail válido "cliente@ebac.com"
+    Então o sistema deve realizar o cadastro com sucesso
 
 
-    Scenario: Deve ser cadastrado com todos os dados obrigatórios, marcado com asteriscos
-        When eu preencho todos os campos obrigatórios marcados com asterisco
-        And informo um e-mail válido "cliente@ebac.com"
-        And clico no botão "Cadastrar"
-        Then o sistema deve realizar o cadastro com sucesso
 
-    Scenario Outline: Não deve permitir campo e-mail com formato inválido. Sistema deve inserir uma mensagem de erro
-        When eu preencho todos os campos obrigatórios corretamente
-        And informo o e-mail "<email>"
-        And clico no botão "Cadastrar"
-        Then o sistema deve exibir a mensagem de erro "Formato de e-mail inválido"
+   Cenário: Não deve permitir campo e-mail com formato inválido. Sistema deve inserir uma mensagem de erro
+        Quando eu preencho todos os campos obrigatórios corretamente
+        E informo o e-mail "<email>"
+         clico no botão "Cadastrar"
+        Então o sistema deve exibir a mensagem de erro "Formato de e-mail inválido"
 
-        Examples:
+        Exemplos:
             | email           |
             | clienteebac.com |
             | cliente@ebac    |
@@ -20,12 +21,12 @@
             | cliente@.com    |
 
 
-    Scenario Outline: Ao tentar cadastrar com campos vazios, deve exibir mensagem de alerta.
-        When eu deixo o campo "<campo>" vazio
-        And clico no botão "Cadastrar"
-        Then o sistema deve exibir mensagem de alerta informando que o campo é obrigatório
+    Cenário: Ao tentar cadastrar com campos vazios, deve exibir mensagem de alerta.
+        Quando eu deixo o campo "<campo>" vazio
+        E clico no botão "Cadastrar"
+        Então o sistema deve exibir mensagem de alerta informando que o campo é obrigatório
 
-        Examples:
+        Exemplos:
             | campo     |
             | Nome      |
             | Sobrenome |
