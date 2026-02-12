@@ -1,24 +1,26 @@
- 
- 
-  Scenario Outline:inserir dados válidos deve ser direcionado para a tela de checkout
-    When eu informo usuário "cliente@ebac.com"
-    And informo senha "Senha123"
-    And clico no botão "Entrar"
-    Then devo ser direcionado para a tela de checkout
+      #language: pt
 
- 
- 
- Scenario Outline: um dos campos inválidos deve exibir uma mensagem de alerta “Usuário ou senha inválidos”
-    When eu informo usuário "<usuario>"
-    And informo senha "<senha>"
-    And clico no botão "Entrar"
-    Then o sistema deve exibir a mensagem "Usuário ou senha inválidos"
 
-    Examples:
+      Cenário:inserir dados válidos deve ser direcionado para a tela de checkout
+      Quando eu informo usuário "cliente@ebac.com" e a senha "Senha123"
+      E que clico no botão "Entrar"
+      Então devo ser direcionado para a tela de checkout
+
+
+
+
+      Cenário: um dos campos inválidos deve exibir uma mensagem de alerta “Usuário ou senha inválidos”
+      Dado que informo usuário "<usuario>"
+      E informo senha "<senha>" e clico no botão "Entrar"
+      Então o sistema deve exibir a mensagem "Usuário ou senha inválidos"
+
+
+      Exemplos:
       | usuario              | senha       |
       | cliente@ebac.com     | SenhaErrada |
       | usuario@invalido.com | Senha123    |
       |                      | Senha123    |
       | cliente@ebac.com     |             |
+
 
 
