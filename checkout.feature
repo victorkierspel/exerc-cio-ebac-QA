@@ -9,8 +9,7 @@
 
    Cenário: Não deve permitir campo e-mail com formato inválido. Sistema deve inserir uma mensagem de erro
         Quando eu preencho todos os campos obrigatórios corretamente
-        E informo o e-mail "<email>"
-         clico no botão "Cadastrar"
+        E informo o e-mail "<email>" e clico no botão "Cadastrar"
         Então o sistema deve exibir a mensagem de erro "Formato de e-mail inválido"
 
         Exemplos:
@@ -32,3 +31,4 @@
             | Sobrenome |
             | E-mail    |
             | Senha     |
+
