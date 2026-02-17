@@ -27,6 +27,8 @@
             Quando eu deixo o campo "<campo>" vazio
             E clico no botão "Cadastrar"
             Então o sistema deve exibir mensagem de alerta informando que o campo é obrigatório
+
+            #Novamente, como produtos devem ser cadastrados, logo, teste terão que ser feitos, então, título é "Esquema do Cenário"
             
 
             Exemplos:
@@ -35,5 +37,6 @@
             | Sobrenome |
             | E-mail    |
             | Senha     |
+
 
 
