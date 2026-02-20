@@ -1,15 +1,18 @@
             #language: pt
 
-            Esquema do Cenario: Deve ser cadastrado com todos os dados obrigatórios, marcado com asteriscos
+            #Histórias do usuário - Como novo cliente da plataforma
+            Quero realizar meu cadastro preenchendo todos os campos obrigatórios corretamente
+            Para criar minha conta com sucesso e acessar o sistema
+
+            Contexto: Dado que estou na página de cadastro com os campos obrigatórios disponíveis para preenchimento.
+
+            Cenario: Deve ser cadastrado com todos os dados obrigatórios, marcado com asteriscos
             Quando eu preencho todos os campos obrigatórios marcados com asterisco
             E informo um e-mail válido "cliente@ebac.com"
             Então o sistema deve realizar o cadastro com sucesso
 
-            #Como devem ser cadastrados, ou seja, devo inserir email, senha e então fazer o cadastro, esse é um cenário testável.
 
-
-
-            Cenário: Não deve permitir campo e-mail com formato inválido. Sistema deve inserir uma mensagem de erro
+            Esquema do Cenário: Não deve permitir campo e-mail com formato inválido. Sistema deve inserir uma mensagem de erro
             Dado que todos os campos obrigatórios foram preenchidos corretamente
             Quando informo o e-mail "<email>" errado
             E clico no botão "Cadastrar"
@@ -23,13 +26,17 @@
             | cliente@.com    |
 
 
+            #Histórias do usuário -  Como cliente que deseja se cadastrar na plataforma
+            Quero ser alertado caso deixe um campo obrigatório vazio
+            Para que eu possa corrigir a informação antes de concluir o cadastro
+
+            Contexto: Dado que estou na página de cadastro com os campos obrigatórios identificados.
+
             Esquema do Cenário: Ao tentar cadastrar com campos vazios, deve exibir mensagem de alerta.
             Quando eu deixo o campo "<campo>" vazio
             E clico no botão "Cadastrar"
             Então o sistema deve exibir mensagem de alerta informando que o campo é obrigatório
 
-            #Novamente, como produtos devem ser cadastrados, logo, teste terão que ser feitos, então, título é "Esquema do Cenário"
-            
 
             Exemplos:
             | campo     |
@@ -37,6 +44,5 @@
             | Sobrenome |
             | E-mail    |
             | Senha     |
-
 
 
