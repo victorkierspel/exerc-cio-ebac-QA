@@ -1,5 +1,4 @@
-            Funcionalidade: Realizar um cadastro preenchendo todos os campos obrigatórios corretamente.
-
+            Funcionalidade: Realizar cadastro com campos obrigatórios válidos.
             Como cliente da EBAC Shop
             Quero realizar meu cadastro preenchendo todos os campos obrigatórios corretamente
             Para criar minha conta com sucesso e acessar o sistema
@@ -56,6 +55,7 @@
             | Sobrenome |
             | E-mail    |
             | Senha     |
+
 
 
 
