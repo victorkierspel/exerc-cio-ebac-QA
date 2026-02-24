@@ -6,7 +6,6 @@
             Para garantir que estou comprando o item correto sem erros
 
             Contexto: Dado que o usuário está logado e acessa um produto com variações obrigatórias
-
             Esquema do Cenário:  Validar obrigatoriamente as seleções antes de inserir no carrinho
             Quando eu seleciono a cor <cor> e tamanho <tamanho>
             Mas não informo a quantidade
@@ -31,7 +30,6 @@ Quero que o sistema limite a quantidade máxima de produtos por compra a 10 unid
 Para garantir que a regra comercial da loja seja respeitada
 
 Contexto: Dado que não quero comprar uma quantidade maior do que a permitida
-
 Cenario: Deve permitir apenas 10 produtos por venda.
 Quando eu seleciono a cor "Preto"
 E informo a quantidade 11 e clico no botão "Adicionar ao carrinho"
@@ -48,7 +46,6 @@ Quero que o botão "Limpar" restaure as seleções ao estado original
 Para que eu possa reiniciar minha escolha sem precisar alterar campo por outros produtos
 
 Contexto: Limpar o campo de seleção.
-
 Cenário: Quando eu clicar no botão "limpar" deve voltar ao estado original
 Dado que selecionei cor "Azul", tamanho "M" e quantidade 3
 Quando eu clicar no botão "Limpar"
