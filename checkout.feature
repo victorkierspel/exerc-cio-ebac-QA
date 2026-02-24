@@ -1,9 +1,9 @@
-            Funcionalidade: Realizar cadastro com campos obrigatórios válidos.
+            Funcionalidade: Realizar cadastro com campos obrigatórios válidos
             Como cliente da EBAC Shop
             Quero realizar meu cadastro preenchendo todos os campos obrigatórios corretamente
             Para criar minha conta com sucesso e acessar o sistema
 
-            Contexto: Dado que estou na página de cadastro com os campos obrigatórios disponíveis para preenchimento.
+            Contexto: Dado que estou na página de cadastro com os campos obrigatórios disponíveis para preenchimento
 
             Cenario: Deve ser cadastrado com todos os dados obrigatórios, marcado com asteriscos
             Quando eu preencho todos os campos obrigatórios marcados com asterisco
@@ -19,7 +19,7 @@
             Quero que o sistema valide o formato do e-mail informado
             Para garantir que eu insira um endereço válido antes de concluir o cadastro
 
-            Contexto: Dado que preciso fazer o cadastro, o email precisa ser validado.
+            Contexto: Dado que preciso fazer o cadastro, o email precisa ser validado
 
             Esquema do Cenário: Não deve permitir campo e-mail com formato inválido. Sistema deve inserir uma mensagem de erro
             Quando todos os campos obrigatórios foram preenchidos corretamente e informo o e-mail <email> errado
@@ -41,9 +41,9 @@
             Quero ser alertado caso deixe um campo obrigatório vazio
             Para que eu possa corrigir a informação antes de concluir o cadastro
 
-            Contexto: Dado que estou na página de cadastro com os campos obrigatórios identificados.
+            Contexto: Dado que estou na página de cadastro com os campos obrigatórios identificados
 
-            Esquema do Cenário: Ao tentar cadastrar com campos vazios, deve exibir mensagem de alerta.
+            Esquema do Cenário: Ao tentar cadastrar com campos vazios, deve exibir mensagem de alerta
             Quando eu deixo o campo <campo> vazio
             E clico no botão "Cadastrar"
             Então o sistema deve exibir mensagem de alerta informando que o campo é obrigatório
@@ -55,7 +55,6 @@
             | Sobrenome |
             | E-mail    |
             | Senha     |
-
 
 
 
