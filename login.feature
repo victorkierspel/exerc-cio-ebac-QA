@@ -6,19 +6,13 @@
 
 
             Contexto: Dado que estou na tela de Login
+
             Cenário: Deve direcionar para a tela de checkout ao inserir dados válidos
             Quando eu informo um e-mail válido "cliente@ebac.com"
             E preencho corretamente a senha cadastrada
             Então o sistema deve me direcionar para a tela de checkout
 
 
-
-
-            Funcionalidade: Autenticação do usuário
-
-            Como cliente da EBAC-SHOP
-            Quero fazer o login (autenticação) na plataforma
-            Para visualizar meus pedidos
 
             Contexto: Dado que os dados são inválidos
             Esquema do Cenário: Não deve permitir campo e-mail com formato inválido. Sistema deve inserir uma mensagem de erro
