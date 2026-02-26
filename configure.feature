@@ -22,15 +22,6 @@
 
 
 
-
-
-Funcionalidade: Configurar produto
-
-Como cliente da EBAC-SHOP
-Quero configurar o meu produto
-E escolher a quantidade
-Para depois inserir no carrinho
-
 Contexto: Dado que quero um limite de compra
 Cenario: Deve permitir apenas 10 produtos por venda.
 Quando eu seleciono a cor "Preto"
@@ -38,15 +29,6 @@ E informo a quantidade 11 e clico no botão "Adicionar ao carrinho"
 Então o sistema deve exibir mensagem informando que o limite máximo é 10 produtos por venda
 
 
-
-
-
-Funcionalidade: Configurar produto
-
-Como cliente da EBAC-SHOP
-Quero configurar o meu produto
-E escolher a quantidade
-Para depois inserir no carrinho
 
 
 Contexto: Limpar o campo de seleção.
