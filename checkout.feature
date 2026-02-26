@@ -12,13 +12,6 @@
 
 
 
-
-            Funcionalidade: Tela de Checkout
-
-            Como cliente da EBAC Shop
-            Quero realizar meu cadastro
-            Para finalizar minhas compras
-
             Contexto: Dado que preciso fazer o cadastro
             Esquema do Cenário: Não deve permitir campo e-mail com formato inválido, erro deve ser informado
             Quando todos os campos obrigatórios foram preenchidos corretamente e informo o e-mail <email> errado
@@ -32,13 +25,6 @@
             | @ebac.com       |
             | cliente@.com    |
 
-
-
-            Funcionalidade: Tela de Checkout
-
-            Como cliente da EBAC Shop
-            Quero realizar meu cadastro
-            Para finalizar minhas compras
 
             Contexto: Dado que estou na página de cadastro
             Esquema do Cenário: Ao tentar cadastrar com campos vazios, deve exibir mensagem de alerta
